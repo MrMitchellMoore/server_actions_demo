@@ -1,4 +1,5 @@
 import { addProductToDatabase } from "../serverActions";
+import AddProductButton from "./AddProductButton";
 
 export function ProductForm() {
   return (
@@ -18,9 +19,7 @@ export function ProductForm() {
           placeholder="Enter Product price..."
           name="price"
         />
-        <button className="bg-gray-600 hover:bg-gray-300 hover:text-black p-2 rounded-md font-bold text-white">
-          Add Product
-        </button>
+        <AddProductButton />
       </form>
     </div>
   );

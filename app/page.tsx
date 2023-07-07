@@ -1,6 +1,6 @@
 import { ProductForm } from "./components";
 import SingleProduct from "./components/Product";
-import { currency, getProducts } from "./functions";
+import { getProducts } from "./functions";
 
 export default async function Home() {
   const products = await getProducts();
